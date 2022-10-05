@@ -8,16 +8,16 @@ Clear();
 Write("Введите 2 числa: ");
 int numberA = int.Parse(ReadLine()!);
 int numberB = int.Parse(ReadLine()!);
-int Exp=Exponent(numberA);
+int Exp=Exponent(numberA, numberB);
 WriteLine($"{numberA} в {numberB} степени равно {Exp}");
 
 //метод возведения числа А в степень В
-int Exponent(int number)
+int Exponent(int number1, int number2)
 {   
     int result = 1;
-    for(int i=1; i<=numberB; i++)
+    for(int i=1; i<=number2; i++)
     {
-        result=result*numberA;
+        result=result*number1;
     }
     return result;
 }
