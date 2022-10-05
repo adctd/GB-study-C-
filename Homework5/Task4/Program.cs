@@ -33,9 +33,6 @@ void FindMinMaxDif(int[] array)
     {
         if(array[i]<min)
         min = array[i];
-    }
-for(int i= 0; i < array.Length; i++)
-    {
         if(array[i]>max)
         max = array[i];
     }
